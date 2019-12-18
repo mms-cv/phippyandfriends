@@ -14,6 +14,7 @@ pool:
   vmImage: 'ubuntu-16.04'
 
 variables:
+- group: ACR
 - template: ../common/ci-vars-template.yml
   parameters:
       projectName: parrot
