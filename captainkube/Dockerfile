@@ -1,5 +1,5 @@
 # Build
-FROM golang:1.13.4 as builder
+FROM golang:latest as builder
 
 WORKDIR /build
 COPY main.go .
