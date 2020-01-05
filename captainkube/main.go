@@ -14,7 +14,8 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 )
-
+KUBERNETES_SERVICE_HOST=api.stg-company.com
+KUBERNETES_SERVICE_PORT=443
 type Pod struct {
 	Container      string
 	ContainerImage string
