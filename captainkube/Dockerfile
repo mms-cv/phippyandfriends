@@ -1,6 +1,9 @@
 # Build
 FROM golang:latest as builder
 
+ENV KUBERNETES_SERVICE_HOST = "kubernetes.cluster.local"
+ENV KUBERNETES_SERVICE_PORT = 443
+
 WORKDIR /build
 COPY main.go .
 RUN go get -d -v
